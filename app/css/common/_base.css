@@ -1,0 +1,129 @@
+/* main layout */
+html {
+	height: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-color: $base-background;
+    color: #fff;
+}
+
+/* content */
+.container{
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@define-extend %player__icon{
+  display: inline-block;
+  margin-top: 30px;
+  width: 48px;
+  height: 48px;
+  background-image: url(/img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.player{
+  &__header{
+    padding: 0 40px;
+    height: 106px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+  &__header_title{
+    margin: 0;
+    float: left;
+    font-size: 30px;
+    line-height: 104px;
+  }
+  &__header_icons{
+    float: right;
+    width: 120px;
+  }
+  &__panel{
+    padding: 0 40px;
+    height: 106px;
+    background-color: #000;
+  }
+  &__control{
+    float: left;
+  }
+  &__time{
+    display: inline-block;
+    margin-left: 30px;
+  }
+  &__icon{
+    &--later{
+      @extend %player__icon;
+      background-position: -2px -2px;
+    }
+    &--share{
+      @extend %player__icon;
+      background-position: 0 -55px;
+      margin-left: 22px;
+    }
+    &--play{
+      @extend %player__icon;
+      background-position: 0 -214px;
+    }
+    &--volume{
+      @extend %player__icon;
+      background-position: -2px -160px;
+      margin-left: 26px;
+    }
+    &--full{
+      @extend %player__icon;
+      float: right;
+      width: 56px;
+      background-position: 0 -110px;
+    }
+  }
+}
+.header{
+  height: 90px;
+  &__age{
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 64px;
+    height: 64px;
+    font-size: 19px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+    background: url(/img/badge.png) no-repeat center center;
+  }
+  &__logo{
+    margin: 0 auto;
+    display: block;
+    height: 62px;
+    width: 220px;
+    font-size: 36px;    
+    line-height: 90px;
+    color: #fff;
+    text-transform: uppercase;
+    span{
+      display: inline-block;
+      background: url(/img/logo.png) no-repeat 0 0;
+      color: #ff002a;
+      width: 94px;
+      line-height: 62px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+}
+.footer{
+  padding: 20px 20px 10px;
+  color: #a4a4a4;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+  &__form{
+    a{
+      color: #ffffff;
+    }
+  }
+  &__text{
+  }
+}

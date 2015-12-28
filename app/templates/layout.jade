@@ -1,0 +1,15 @@
+//- layout.jade
+include helpers/variables
+doctype html
+html
+	block page-title
+		title Заголовок страницы	
+	include partials/head
+	body
+		main.container
+			//- content main page
+			block content
+		//- scripts
+		include partials/scripts
+		script.
+			(function() {console.log("Start");})();
