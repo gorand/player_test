@@ -1,17 +1,10 @@
 /* colors */
 $color-white: #fbfcfd;
-$color-blue: #3bbfce;
-$base-background: #2f2f2f;
+$color-grey: #ddd;
 $color-bg: #2f2f2f;
-
-/* fonts*/
-
-$font-default: Arial, Verdana, Helvetica, sans-serif;
-$font-external: fira_sansbook, Arial, Verdana, Helvetica, sans-serif;
-$font-additional: "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
-$font-unit: 1px;
 
 /* special for project */
 $padding-panel: 6%;
 $width-icon: 7%;
 $height-panel: 80px;
+$font-sans: 'Roboto-Regular',Arial, Verdana, sans-serif;

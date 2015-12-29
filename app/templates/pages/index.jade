@@ -5,6 +5,7 @@ block page-title
 	title VIDEO Tube
 
 block content
+
 	header.header
 		.header__age 12+
 		a.header__logo video 
@@ -18,6 +19,10 @@ block content
 			a.player__icon--share(href='javascript:void(0);')
 				img.player__icon_img(src='img/ico_share.png' alt='Share')
 		article.player__thumb
+			a.player__btn_start(href="javascript:void(0);") Смотреть
+			a.player__btn_cancel(href="javascript:void(0);") Отмена
+		.player__timeline
+			.player__timeline_value(style="width:30%")
 		.player__panel
 			a.player__icon--play(href="javascript:void(0);")
 				img.player__icon_img(src='img/ico_play.png' alt='Play')

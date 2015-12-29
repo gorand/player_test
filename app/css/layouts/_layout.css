@@ -4,8 +4,8 @@
 	&__title{
 		display: inline-block;
 		padding: 4px 10px;
-		background: $base-background;
-		border: solid 1px color($base-background b(15%));
+		background: $color-bg;
+		border: solid 1px color($color-bg b(15%));
 		border-radius: 2px;
 		font-size: 1.25em;
 		color: $black-2;

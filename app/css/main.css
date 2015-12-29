@@ -13,6 +13,7 @@
 /** 
  * Base project style
  =================================================*/
+@import "common/fonts";
 @import "common/base";
 @import "common/ui";
 @import "common/symbols";

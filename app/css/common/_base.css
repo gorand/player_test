@@ -3,10 +3,11 @@ html {
 	height: 100%;
 }
 body{
-	height: 100%;
-	width: 100%;
-	background-color: $color-bg;
-    color: #fff;
+  font-family: $font-sans;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-color: #DDD;
 }
 
 /* content */
@@ -14,6 +15,7 @@ body{
   position: relative;
   max-width: 640px;
   margin: 0 auto;
+  background-color: $color-bg;
 }
 @define-extend %player__icon{
   display: inline-block;
@@ -47,7 +49,67 @@ body{
   }
   &__header_icons{
     float: right;
-    width: 120px;
+  }
+  &__thumb{
+    position: relative;
+    min-height: 320px;
+    background: url(/img/media/thumb.jpg) no-repeat center center;
+  }
+  &__btn_start{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 160px;
+    width: 70%;
+    font-size: 54px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #ff002a 0%, #ff002a 50%, #d30e19);
+    border-radius: 25px;
+    &:before{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+    &:after{
+      content: '';
+      position: relative;
+      display: inline-block;
+      left: 20px;
+      width: 84px;
+      height: 94px;
+      vertical-align: middle;
+      background: url(/img/play_start.png) no-repeat center center;
+    }
+  }
+  &__btn_cancel{
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 135px;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .6);
+  }
+  &__timeline{
+	position: relative;
+    height: 8px;
+    overflow: hidden;
+    background-color: #626262;
+    border-radius: 4px;
+  }
+  &__timeline_value{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ec0622;
   }
   &__panel{
     position: relative;
@@ -99,6 +161,11 @@ body{
 }
 .header{
   height: 90px;
+  background-image: linear-gradient(to bottom, 
+    rgba(255, 255, 255, .1) 0%, 
+    rgba(255, 255, 255, .1) 50%, 
+    rgba(255, 255, 255, 0) 50%, 
+    rgba(255, 255, 255, 0) 100%);
   &__age{
     position: absolute;
     top: 12px;
@@ -135,7 +202,7 @@ body{
   padding: 20px 20px 10px;
   color: #a4a4a4;
   font-size: 24px;
-  font-family: Roboto, sans-serif;
+  font-family: $font-sans;
   &__text{
   }
 }
@@ -157,10 +224,8 @@ body{
   }
   &__title{
     position: relative;
-    padding-left: 25px;
+    padding-left: 32px;
     display: inline-block;
-    font-family: Arial, Verdana, sans-serif;
-    line-height: 24px;
     cursor: pointer;
     &:before{
       content: '';
@@ -178,7 +243,7 @@ body{
       position: absolute;
       top: 0; 
       left: 3px;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 1.4;
       font-weight: bold;
       color: #D93300;
