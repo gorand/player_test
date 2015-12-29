@@ -13,16 +13,19 @@ block content
 	section.player
 		header.player__header
 			h1.player__header_title Видео HD
-			.player__header_icons
-				a.player__icon--later(href="javascript:void(0);")
-				a.player__icon--share(href="javascript:void(0);")
+			a.player__icon--later(href='javascript:void(0);')
+				img.player__icon_img(src='img/ico_later.png' alt='Later')
+			a.player__icon--share(href='javascript:void(0);')
+				img.player__icon_img(src='img/ico_share.png' alt='Share')
 		article.player__thumb
 		.player__panel
-			.player__control
-				a.player__icon--play(href="javascript:void(0);")
-				a.player__icon--volume(href="javascript:void(0);")
-				span.player__time	0:01 / 15:44
+			a.player__icon--play(href="javascript:void(0);")
+				img.player__icon_img(src='img/ico_play.png' alt='Play')
+			a.player__icon--volume(href="javascript:void(0);")
+				img.player__icon_img(src='img/ico_volume.png' alt='Volume')
+			span.player__time	0:01 / 15:44
 			a.player__icon--full(href="javascript:void(0);")
+				img.player__icon_img(src='img/ico_full.png' alt='Fullscreen')
 		footer.footer
 			.footer__form Подтверждаю, что люблю мультики, и соглашаюсь с 
 				a.footer__link(href="javascript:void(0);") правилами предоставления услуги

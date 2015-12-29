@@ -310,6 +310,7 @@ td, th {
  =================================================*/
 /* colors */
 /* fonts*/
+/* special for project */
 /* alignment */
 .text-left {
     text-align: left;
@@ -345,35 +346,50 @@ body {
 }
 .player__icon--later, .player__icon--share, .player__icon--play, .player__icon--volume, .player__icon--full {
     display: inline-block;
-    margin-top: 30px;
-    width: 48px;
-    height: 48px;
-    background-image: url(/img/sprite.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: 7%;
+}
+.player {
+    width: 100%;
 }
 .player__header {
-    padding: 0 40px;
-    height: 106px;
+    position: relative;
+    padding: 0 6%;
+    height: 80px;
+    text-align: right;
     background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 }
+.player__header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
 .player__header_title {
-    margin: 0;
-    float: left;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
     font-size: 30px;
-    line-height: 104px;
+    line-height: 1.5;
 }
 .player__header_icons {
     float: right;
     width: 120px;
 }
 .player__panel {
-    padding: 0 40px;
-    height: 106px;
+    position: relative;
+    padding: 0 6%;
+    height: 80px;
     background-color: #000;
 }
-.player__control {
-    float: left;
+.player__panel:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 .player__time {
     display: inline-block;
@@ -394,9 +410,14 @@ body {
     margin-left: 26px;
 }
 .player__icon--full {
-    float: right;
-    width: 56px;
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
     background-position: 0 -110px;
+}
+.player__icon_img {
+    width: 100%;
 }
 .header {
     height: 90px;

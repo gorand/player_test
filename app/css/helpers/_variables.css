@@ -1,12 +1,8 @@
 /* colors */
 $color-white: #fbfcfd;
 $color-blue: #3bbfce;
-$color-input: #e4e4e4;
-$color-border: #B4B4B4;
-$color-bg: #383838;
-$color-success: #a7b92a;
-$color-error: #fc6767;
 $base-background: #2f2f2f;
+$color-bg: #2f2f2f;
 
 /* fonts*/
 
@@ -14,3 +10,8 @@ $font-default: Arial, Verdana, Helvetica, sans-serif;
 $font-external: fira_sansbook, Arial, Verdana, Helvetica, sans-serif;
 $font-additional: "Roboto-Regular", Arial, Verdana, Helvetica, sans-serif;
 $font-unit: 1px;
+
+/* special for project */
+$padding-panel: 6%;
+$width-icon: 7%;
+$height-panel: 80px;
