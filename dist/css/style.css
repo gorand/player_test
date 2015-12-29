@@ -459,10 +459,52 @@ body {
     font-size: 24px;
     font-family: Roboto, sans-serif;
 }
-.footer__form a {
+.footer__text {}
+.form__link {
     color: #ffffff;
 }
-.footer__text {}
+.form__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+.form__checkbox ~ .form__title:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.form__checkbox:checked ~ .form__title:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.form__title {
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 24px;
+    cursor: pointer;
+}
+.form__title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000;
+    background: #FFF;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.3);
+}
+.form__title:after {
+    content: '✔';
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: #D93300;
+    transition: all .3s ease-out;
+}
 .ico {
     display: inline-block;
     font: normal normal normal 14px/1 Iconproject;
