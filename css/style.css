@@ -462,7 +462,7 @@ body {
     height: 240px;
     overflow: hidden;
     text-align: center;
-    background: url(/img/thumb.jpg) no-repeat center center;
+    background: url(../img/thumb.jpg) no-repeat center center;
     background-size: cover;
     z-index: 1;
 }
@@ -504,7 +504,7 @@ body {
     width: 2.4rem;
     height: 2.5rem;
     vertical-align: middle;
-    background: url(/img/play_start.png) no-repeat center center;
+    background: url(../img/play_start.png) no-repeat center center;
     background-size: contain;
 }
 .player__btn_start.is-disabled {
@@ -603,7 +603,7 @@ body {
     line-height: 3.5rem;
     text-align: center;
     color: #fff;
-    background: url(/img/badge.png) no-repeat center center;
+    background: url(../img/badge.png) no-repeat center center;
     background-size: contain;
 }
 .header__logo {
