@@ -1,14 +1,14 @@
 /* colors */
-$color-white: #fbfcfd;
+$color-white: #fff;
 $color-grey: #ddd;
 $color-bg: #2f2f2f;
 
-/* special for project */
+/* Special for project */
 $screen-sm: 321px;
 $screen-md: 481px;
 $screen-lg: 641px;
-$padding-panel: 6%;
-$width-icon: 7%;
+$padding-panel: 1rem;
+$width-icon: 6.5%;
 $height-header: 5rem;
 $height-panel: 3.125rem;
-$font-sans: 'Roboto-Regular',Arial, Verdana, sans-serif;
+$font-sans: 'Roboto-Regular', Arial, Verdana, sans-serif;

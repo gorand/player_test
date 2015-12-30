@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Build a default project",
   "devDependencies": {
+    "autoprefixer": "^6.2.3",
     "browser-sync": "latest",
+    "cssnext": "^1.8.4",
     "gulp": "latest",
     "gulp-jade": "latest",
     "gulp-notify": "latest",

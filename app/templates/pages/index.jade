@@ -19,7 +19,7 @@ block content
 			a.player__icon--share(href='javascript:void(0);')
 				img.player__icon_img(src='img/ico_share.png' alt='Share')
 		.player__thumb
-			a.player__btn_start(href="javascript:void(0);") Смотреть
+			a.player__btn_start.js-startPlay(href="javascript:void(0);") Смотреть
 			.player__info Просмотров 14204
 			a.player__btn_cancel(href="javascript:void(0);") Отмена
 		.player__timeline
@@ -34,7 +34,7 @@ block content
 				img.player__icon_img(src='img/ico_full.png' alt='Fullscreen')
 		footer.footer
 			form.form
-				input.form__checkbox(type="checkbox" id="custom" checked)
-				label.form__title(for="custom") Подтверждаю, что люблю мультики, и соглашаюсь с  
+				input.form__checkbox(type="checkbox" id="checkPlay" checked)
+				label.form__title(for="checkPlay") Подтверждаю, что люблю мультики, и соглашаюсь с  
 					a.form__link(href="javascript:void(0);") правилами предоставления услуги
 			p.footer__text Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”. Стоимость: 20 руб в сутки с НДС. 

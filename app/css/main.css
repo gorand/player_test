@@ -3,19 +3,15 @@
  =================================================*/
 @import "vendor/normalize";
 
+
 /** 
  * Variables and mixins for project
  =================================================*/
 @import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/helpers";
+
 
 /** 
  * Base project style
  =================================================*/
 @import "common/fonts";
 @import "common/base";
-@import "common/ui";
-@import "common/symbols";
-@import "layouts/layout";
-
