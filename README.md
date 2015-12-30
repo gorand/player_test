@@ -1,16 +1,4 @@
-# Webapp
-Structure for a simple web site
+# Responsive player
+Test assignment on adaptive player
 
-##Installation
-
-```js
-npm install gulp gulp-postcss gulp-jade gulp-rename gulp-notify gulp-webserver --save-dev
-bower install
-```
-
-## Usage
-run default task
-
-```js
-gulp
-```
+## [Demo](http://gorand.github.io/player_test)

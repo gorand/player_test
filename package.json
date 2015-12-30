@@ -7,6 +7,7 @@
     "browser-sync": "latest",
     "cssnext": "^1.8.4",
     "gulp": "latest",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-jade": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
