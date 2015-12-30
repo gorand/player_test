@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	colorFunction = require("postcss-color-function"),	
 	browserSync = require('browser-sync').create(),
 	rename = require("gulp-rename"),
-	plumber = require('gulp-plumber'),	
+  plumber = require('gulp-plumber'),  
+	ghPages = require('gulp-gh-pages'),
 	notify = require('gulp-notify');
 
 // runing a webserver
@@ -58,6 +59,12 @@ gulp.task('js', function(){
 		.pipe(notify('Шаблоны .jade обновлены'))
  		.pipe(gulp.dest('raw/builder/jade'));
  });
+
+// GitHub Pages
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 // watcher
 gulp.task('watch', function() {
