@@ -9,7 +9,7 @@ block content
 	header.header
 		.header__age 12+
 		a.header__logo video 
-			span Tube
+			span.header__logo--brand Tube
 
 	section.player
 		header.player__header
@@ -20,6 +20,7 @@ block content
 				img.player__icon_img(src='img/ico_share.png' alt='Share')
 		.player__thumb
 			a.player__btn_start(href="javascript:void(0);") Смотреть
+			.player__info Просмотров 14204
 			a.player__btn_cancel(href="javascript:void(0);") Отмена
 		.player__timeline
 			.player__timeline_value(style="width:30%")

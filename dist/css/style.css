@@ -412,7 +412,7 @@ html {
 }
 @media only screen and (min-width: 481px) {
     html {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 body {
@@ -431,7 +431,7 @@ body {
     margin: 0 auto;
     background-color: #2f2f2f;
 }
-.player__header:before, .player__thumb:before, .player__panel:before {
+.player__header:before, .player__panel:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -451,7 +451,7 @@ body {
     padding: 0 6%;
     height: 3.125rem;
     text-align: right;
-    background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     z-index: 5;
 }
 .player__header_title {
@@ -470,6 +470,7 @@ body {
     position: relative;
     margin-top: calc(-3.125rem);
     height: 240px;
+    overflow: hidden;
     text-align: center;
     background: url(/img/media/thumb.jpg) no-repeat center center;
     background-size: cover;
@@ -487,16 +488,17 @@ body {
 }
 .player__btn_start {
     position: relative;
-    display: inline-block;
-    padding: 0 .5rem;
-    width: 62%;
+    display: block;
+    margin: 4.25rem auto .35rem;
+    padding: .25rem .5rem;
+    width: 13rem;
     font-size: 1.8rem;
     line-height: 2.4;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     background-image: linear-gradient(to bottom, #ff002a 0%, #ff002a 50%, #d30e19);
-    border-radius: .85rem;
+    border-radius: .9rem;
 }
 .player__btn_start:before {
     content: '';
@@ -517,16 +519,20 @@ body {
 }
 .player__btn_cancel {
     display: block;
-    margin: calc(-3.125rem) auto 0;
-    width: 100px;
+    margin: 0 auto;
+    width: 90px;
     color: #ffffff;
     font-size: 18px;
     line-height: 1.6;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, .6);
+}
+.player__info {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
 }
 .player__timeline {
     position: relative;
@@ -576,6 +582,11 @@ body {
 .player__icon_img {
     width: 100%;
 }
+@media only screen and (min-width: 481px) {
+    .player__thumb {
+        height: 320px;
+    }
+}
 .header {
     height: 5rem;
     text-align: center;
@@ -588,7 +599,7 @@ body {
 .header__age {
     position: absolute;
     top: .5rem;
-    left: 0.6rem;
+    left: .6rem;
     width: 3.5rem;
     height: 3.5rem;
     font-size: 1.2rem;
@@ -605,15 +616,15 @@ body {
     color: #fff;
     text-transform: uppercase;
 }
-.header__logo span {
+.header__logo--brand {
     display: inline-block;
-    padding: 0 .35rem;
+    padding: 0 .5rem;
     background-color: #fff;
     color: #ff002a;
-    line-height: 3.75rem;
+    line-height: 3.25rem;
     text-align: center;
     text-transform: capitalize;
-    border-radius: 1.4rem/1.2rem;
+    border-radius: 1.45rem/1.1rem;
 }
 .footer {
     padding: .6rem .8rem;

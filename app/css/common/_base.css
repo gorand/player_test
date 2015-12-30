@@ -3,7 +3,7 @@ html {
   height: 100%;
   font-size: 1rem;
   @media only screen and (min-width: $screen-md) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
   }
 }
 body{
@@ -42,7 +42,7 @@ body{
     padding: 0 $padding-panel;
     height: $height-panel;
     text-align: right;
-    background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     z-index: 5;
     &:before{
       @extend %snippet--inline_before;
@@ -64,13 +64,11 @@ body{
     position: relative;
     margin-top: calc(-$height-panel);
     height: 240px;
+    overflow: hidden;
     text-align: center;
     background: url(/img/media/thumb.jpg) no-repeat center center;
     background-size: cover;
     z-index: 1;
-    &:before{
-      @extend %snippet--inline_before;
-    }
     &:after{
       position: absolute;
       content: '';
@@ -81,19 +79,24 @@ body{
       background: rgba(0, 0, 0, .3);
       z-index: -1;
     }
+    @media only screen and (min-width: $screen-md) {
+      height: 320px;
+    }
+    
   }
   &__btn_start{
     position: relative;
-    display: inline-block;
-    padding: 0 .5rem;
-    width: 62%;
+    display: block;
+	margin: 4.25rem auto .35rem;
+    padding: .25rem .5rem;
+    width: 13rem;
     font-size: 1.8rem;
     line-height: 2.4;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     background-image: linear-gradient(to bottom, #ff002a 0%, #ff002a 50%, #d30e19);
-    border-radius: .85rem;
+    border-radius: .9rem;
     &:before{
       content: '';
       display: inline-block;
@@ -114,16 +117,20 @@ body{
   }
   &__btn_cancel{
     display: block;
-    margin: calc(-$height-panel) auto 0;
-    width: 100px;
+    margin: 0 auto;
+    width: 90px;
     color: #ffffff;
     font-size: 18px;
     line-height: 1.6;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, .6);
+  }
+  &__info{
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
   }
   &__timeline{
 	position: relative;
@@ -195,7 +202,7 @@ body{
   &__age{
     position: absolute;
     top: .5rem;
-    left: 0.6rem;
+    left: .6rem;
     width: 3.5rem;
     height: 3.5rem;
     font-size: 1.2rem;
@@ -211,15 +218,15 @@ body{
     line-height: $height-header;
     color: #fff;
     text-transform: uppercase;
-    span{
+    &--brand{
       display: inline-block;
-      padding: 0 .35rem;
+      padding: 0 .5rem;
       background-color: #fff;
       color: #ff002a;
-      line-height: 3.75rem;
+      line-height: 3.25rem;
       text-align: center;
       text-transform: capitalize;
-      border-radius: 1.4rem/1.2rem;
+      border-radius: 1.45rem/1.1rem;
     }
   }
 }
@@ -255,7 +262,7 @@ body{
     &:before{
       content: '';
       position: absolute;
-      left:0; 
+      left: 0; 
       top: 2px;
       width: 18px; 
       height: 18px;
