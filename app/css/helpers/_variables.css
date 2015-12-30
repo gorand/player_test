@@ -4,7 +4,11 @@ $color-grey: #ddd;
 $color-bg: #2f2f2f;
 
 /* special for project */
+$screen-sm: 321px;
+$screen-md: 481px;
+$screen-lg: 641px;
 $padding-panel: 6%;
 $width-icon: 7%;
-$height-panel: 80px;
+$height-header: 5rem;
+$height-panel: 3.125rem;
 $font-sans: 'Roboto-Regular',Arial, Verdana, sans-serif;

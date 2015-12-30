@@ -8,3 +8,9 @@
       clear: both;
   }
 }
+
+@define-mixin screen_to($width-screen){
+	@media only screen and (max-width: $width-screen) {
+        @content;
+	}
+}
